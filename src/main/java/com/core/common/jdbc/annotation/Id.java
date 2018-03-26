@@ -1,4 +1,4 @@
-package com.core.common.annotation;
+package com.core.common.jdbc.annotation;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;

@@ -1,4 +1,4 @@
-package com.core.common.util.string;
+package com.core.common.jdbc.sqlhelp;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -6,9 +6,9 @@ import java.lang.reflect.Method;
 
 import org.springframework.util.StringUtils;
 
-import com.core.common.annotation.Column;
-import com.core.common.annotation.Id;
-import com.core.common.annotation.Table;
+import com.core.common.jdbc.annotation.Column;
+import com.core.common.jdbc.annotation.Id;
+import com.core.common.jdbc.annotation.Table;
 
 /**
  * 数据库实体映射工具类

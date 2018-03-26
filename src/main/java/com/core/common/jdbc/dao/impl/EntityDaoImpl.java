@@ -15,8 +15,8 @@ import org.springframework.util.StringUtils;
 import com.core.common.jdbc.bean.PageResult;
 import com.core.common.jdbc.bean.SqlBean;
 import com.core.common.jdbc.dao.EntityDao;
-import com.core.common.util.string.EntityTools;
-import com.core.common.util.string.SqlTools;
+import com.core.common.jdbc.sqlhelp.EntityTools;
+import com.core.common.jdbc.sqlhelp.SqlTools;
 
 /**
  * 支持注解，若实体没有注解，实体类名需要按照驼峰命名，属性与数据库字段一致不区分大小写

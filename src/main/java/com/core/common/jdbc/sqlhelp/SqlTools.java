@@ -1,4 +1,4 @@
-package com.core.common.util.string;
+package com.core.common.jdbc.sqlhelp;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -8,7 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.apache.commons.collections.MapUtils;
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.util.StringUtils;
 
 import com.core.common.jdbc.bean.SqlBean;
