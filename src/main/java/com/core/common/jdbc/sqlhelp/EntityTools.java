@@ -49,8 +49,9 @@ public class EntityTools {
 			StringBuilder str = new StringBuilder();
 			char[] subStr = entityName.toCharArray();
 			int i = 0;
+			char z = 'Z';
 			while (i < entityName.length()) {
-				while (i < entityName.length() && subStr[i] > 'Z') {
+				while (i < entityName.length() && subStr[i] > z) {
 					if (Character.isLowerCase(subStr[i])) {
 						str.append(String.valueOf(subStr[i]).toUpperCase());
 					} else {
@@ -86,9 +87,11 @@ public class EntityTools {
 	public static boolean isPrimaryKey(Field field) {
 		Id id = field.getAnnotation(Id.class);
 		String columnName = field.getName();
-		if(id!=null) {//该字段是主键
+		String idStr = "id";
+		//该字段是主键
+		if(id!=null) {
 			return true;
-		}else if(columnName.toLowerCase().equals("id")){
+		}else if(idStr.equals(columnName.toLowerCase())){
 			return true;
 		}else {
 			return false;
